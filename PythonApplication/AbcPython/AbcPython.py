@@ -120,6 +120,43 @@ data=f.read()
 print(data)
 f.close()
 
+print('{:06b}'.format(11)) # decimal to binary conversion with 6 places
+print('{:6b}'.format(10))
+print('{:06x}'.format(10)) # decimal to hex conversion with 6 places
+print('{:03x}'.format(0b1111)) # binary to hexadecimal with 3 places
+
+print("{:b}".format(10).zfill(15)) # number = 10, total places = 15
+print("{:x}".format(10).zfill(15)) # number = x, total places = 15
+print("{:o}".format(10).zfill(15)) # number = x, total places = 15
+print("{:d}".format(x).zfill(0b11)) # number = x, total places = 3
+print("{:d}".format(x).zfill(0o11)) # number = x, total places = 9
+
+arr = [10, 20, 30]
+
+for i in range(len(arr)): # bad practice
+    print(2*arr[i]) # 20, 40, 60
+
+for i in arr: # good practices
+    print(2*i) # 20, 40, 60
+
+for i in reversed(arr): # print in reverse order
+    print(2*i) # 60, 40, 20
+
+for i, a in enumerate(arr):
+    print(i, ':', 2*a)
+
+x = [1, 2, 3]
+a, b, c = x #Unpacking
+
+print(a)
+print(b)
+print(c)
+
+student = ["Tom", 90, 95, 98, 30]
+Name, *Marks, Age = student
+print(Marks)
+
+
 
 
 
