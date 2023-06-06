@@ -156,6 +156,11 @@ student = ["Tom", 90, 95, 98, 30]
 Name, *Marks, Age = student
 print(Marks)
 
+x = 3
+y = 2
+z = 5
+x, y, z = y, z, x
+
 
 
 
