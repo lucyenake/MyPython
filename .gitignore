@@ -1,0 +1,11 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+*.vsidx
+/PythonApplication/.vs/PythonApplication/FileContentIndex/4b886bec-b7e4-4ba6-b270-4bca373e8d99.vsidx
+/PythonApplication/.vs/PythonApplication/FileContentIndex/927f02a6-baaa-4771-a478-8fa4f8eb70bf.vsidx
+/PythonApplication/.vs/PythonApplication/FileContentIndex/cd0a5cf9-1267-4a5c-8814-3a484d058ad7.vsidx
+/PythonApplication/.vs/PythonApplication/FileContentIndex/f303ed68-ecd5-413e-a135-6a8167e23f70.vsidx
+/PythonApplication/.vs/PythonApplication/v17/.suo
+*.pyc
