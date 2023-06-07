@@ -1,4 +1,5 @@
-from MyClass import Jungle, RateJungle
+from ast import Num
+from MyClass import Jungle, RateJungle, Spam
 import sys
 import copy
 
@@ -63,6 +64,15 @@ def main():
 
     t=any(item>4 for item in x)
     print(t)
+
+    diff2Num=lambda x,y: x-y
+    t=diff2Num(4,5)
+    print(t)
+
+    s = Spam()
+    print(s.imethod())
+    print(s.cmethod())
+    print(s.smethod(56))
 
 
 if __name__=='__main__':

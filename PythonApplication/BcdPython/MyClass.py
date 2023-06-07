@@ -46,3 +46,20 @@ class RateJungle(Jungle):
     def __call__(self, aValue):
         print("object is used as function"+aValue)
         return "result"
+
+class Spam():
+    num = 10 # class variable
+    
+    def __init__(self, num = 3):
+        self.num = num
+
+    def imethod(self): # print instance variable
+        print("imethod ", self.num)
+
+    @classmethod
+    def cmethod(cls): # print class variable
+        print("cmethod ", cls.num)
+
+    @staticmethod
+    def smethod(num): # print variable defined in the file
+        print("smethod ", num)
