@@ -1,5 +1,6 @@
 from ast import Num
 from MyClass import Jungle, RateJungle, Spam
+from MyRing import Ring
 import sys
 import copy
 
@@ -74,7 +75,24 @@ def main():
     print(s.cmethod())
     print(s.smethod(56))
 
+def MyMain():
+    r=Ring("2017=08-10", "Gold", 5.5, 10.5, 10)
+    print(r.metal)
+    print(r.cost())
+    print(r.area())
+
+    r=Ring()
+    print(r.metal)
+    print(r.cost())
+    print(r.area())
+    print((r.area)())
+
+    print (getattr(r,'metal'))
+    setattr(r,'metal','GOLD')
+    print (getattr(r,'metal'))
+
 
 if __name__=='__main__':
     main()
+    MyMain()
 
