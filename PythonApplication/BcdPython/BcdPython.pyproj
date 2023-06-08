@@ -21,6 +21,7 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Add.py" />
     <Compile Include="BcdPython.py" />
     <Compile Include="MyClass.py" />
   </ItemGroup>

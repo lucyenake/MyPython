@@ -1,6 +1,7 @@
 from ast import Num
 from MyClass import Jungle, RateJungle, Spam
 from MyRing import Ring
+from Add import Add
 import sys
 import copy
 
@@ -91,8 +92,27 @@ def MyMain():
     setattr(r,'metal','GOLD')
     print (getattr(r,'metal'))
 
+def WorkingWithAdd():    
+    # method
+    m = Add(x=4) # or m = Add(4)
+    # for method, above x = 4, will be used for addition
+    m.addMethod(10) # method : 14
+    # classmethod
+    c = Add(4)
+    # for class method, class variable x = 9, will be used for addition
+    c.addClass(10) # clasmethod : 19
+    # for static method, x=20 (at the top of file), will be used for addition
+    s = Add(4)
+    s.addStatic(10) # staticmethod : 30
+    #m.radius="jkj";
+    m.radius(45)
+    m.radius=90
+
+
+
 
 if __name__=='__main__':
     main()
     MyMain()
+    WorkingWithAdd()
 
