@@ -105,11 +105,21 @@ def WorkingWithAdd():
     s = Add(4)
     s.addStatic(10) # staticmethod : 30
     #m.radius="jkj";
-    m.radius(45)
+    #m.radius(45)
     m.radius=90
 
+def addOne(myFunc):
+    def addOneInside(x):
+        print("Decorators: {0}".format(x))
+        return myFunc(x)+1
+    return addOneInside
 
+def subThree(x):
+    return x-3
 
+result=addOne(subThree)
+print("Decorators: {0}".format(subThree(5)))
+print("Decorators: {0}".format(result(5)))
 
 if __name__=='__main__':
     main()
