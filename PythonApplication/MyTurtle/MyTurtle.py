@@ -51,6 +51,5 @@ draw_square(60)
 turtle.end_fill()
 turtle.done()
 
-# …
 # Add this so that the window will close when clicked on
 turtle.exitonclick()
