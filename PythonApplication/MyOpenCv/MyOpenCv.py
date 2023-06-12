@@ -1,5 +1,6 @@
 import cv2
 import datetime
+import numpy as np
 
 events=[i for i in dir(cv2) if 'EVENT' in i]
 print(events)
@@ -21,7 +22,6 @@ img=cv2.putText(img,"My Text",(0,300),font,4,(0,250,1),10,cv2.LINE_AA)
 cv2.imshow('Lena', img)
 
 cv2.setMouseCallback('Lena', mouse_events)
-
 
 key = cv2.waitKey(0)
 if key==27:
@@ -56,5 +56,21 @@ while(cap.isOpened()):
 cap.release()
 out.release()
 cv2.destroyAllWindows()
+
+frame =cv2.imread('G:\MyStuff_Luxa\MyGit\MyPython\MyBolls.png',1)
+hsv_image=cv2.cvtColor(frame,cv2.COLOR_BGR2HSV)
+l_r=np.array([0,120,70])
+u_r=np.array([10,255,255])
+
+mask =cv2.inRange(hsv_image,l_r,u_r)
+result=cv2.bitwise_and(frame,frame,mask=mask)
+
+cv2.imshow('Frame bgr',frame)
+cv2.imshow('Mask', mask)
+cv2.imshow('Result', result)
+
+cv2.waitKey(0)
+cv2.destroyAllWindows()
+
 
 
