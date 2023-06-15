@@ -15,6 +15,8 @@ Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "MyOpenCv", "MyOpenCv\MyOpen
 EndProject
 Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "MyTurtle", "MyTurtle\MyTurtle.pyproj", "{5909FD27-F108-4C09-8914-EBB81000A84A}"
 EndProject
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "MyComputerArt", "MyComputerArt\MyComputerArt.pyproj", "{B27CE47B-D1B4-4BCF-B89A-DD10972F0657}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,8 @@ Global
 		{4A8B766C-C062-40B1-9765-2DFC0EA41BDE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5909FD27-F108-4C09-8914-EBB81000A84A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{5909FD27-F108-4C09-8914-EBB81000A84A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B27CE47B-D1B4-4BCF-B89A-DD10972F0657}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B27CE47B-D1B4-4BCF-B89A-DD10972F0657}.Release|Any CPU.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
