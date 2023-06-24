@@ -17,6 +17,8 @@ Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "MyTurtle", "MyTurtle\MyTurt
 EndProject
 Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "MyComputerArt", "MyComputerArt\MyComputerArt.pyproj", "{B27CE47B-D1B4-4BCF-B89A-DD10972F0657}"
 EndProject
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "MyMatplotlib", "MyMatplotlib\MyMatplotlib.pyproj", "{52ECC425-33E3-41A7-A86E-BFF2306387E3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -37,6 +39,8 @@ Global
 		{5909FD27-F108-4C09-8914-EBB81000A84A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B27CE47B-D1B4-4BCF-B89A-DD10972F0657}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{B27CE47B-D1B4-4BCF-B89A-DD10972F0657}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52ECC425-33E3-41A7-A86E-BFF2306387E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52ECC425-33E3-41A7-A86E-BFF2306387E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
